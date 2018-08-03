@@ -63,8 +63,11 @@ found in Kircher, Martin, et al. "A general framework for estimating the relativ
 The user will supply four arguments when running the 7-30-2018_Van_Andel_vcf_filter_v1.sh script:
 
 The first read in $1 is the working folder
+
 The second read in $2 is the starting vcf file
+
 The third read in $3 is the output tsv file
+
 The forth read in $4 is the output re-annotated vcf file
 
 ## Output Files
