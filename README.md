@@ -16,9 +16,9 @@ variant (if multiallelic, decompose into individual mutations) should be annotat
 the following information derived from the VCF and querying the ExAC database via the
 API (documentation can be found at http://exac.hms.harvard.edu/):
 
-1.Variant type (e.g. insertion, deletion, etc.). 
+1. Variant type (e.g. insertion, deletion, etc.). 
 
-2.Variant effect (e.g. missense,synonymous, etc.).
+2. Variant effect (e.g. missense,synonymous, etc.).
 
 *Note: If multiple variant types exist in the ExAC database, annotate with the most
 deleterious possibility.*
