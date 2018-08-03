@@ -15,6 +15,7 @@ would like you to create a tool to output a table annotating each variant in the
 variant (if multiallelic, decompose into individual mutations) should be annotated with
 the following information derived from the VCF and querying the ExAC database via the
 API (documentation can be found at http://exac.hms.harvard.edu/):
+
 1.Variant type (e.g. insertion, deletion, etc.). 
 2.Variant effect (e.g. missense,synonymous, etc.).
 
