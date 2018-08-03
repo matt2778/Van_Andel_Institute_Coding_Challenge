@@ -46,4 +46,27 @@ both the original vcf file and from a ExAC API database query (http://exac.hms.h
 7. 	Gene ID
 8.	Gene Symbol
 
-**These details are outputed in a tsv and re-annotated vcf file**
+**These details are outputed as a tsv and re-annotated vcf file**
+
+## Required Files
+
+The two files coding_challenge_final_additional_INFO_part.vcf and Allele_consequence_severity_rank.csv are
+required for full function of the script.  
+
+The file coding_challenge_final_additional_INFO_part.vcf includes vcf INFOlines to update the output vcf file.
+
+The file Allele_consequence_severity_rank.csv is a list of allele consequences ranked according to results
+found in Kircher, Martin, et al. "A general framework for estimating the relative pathogenicity of human genetic variants." Nature genetics 46.3 (2014): 310.
+
+## Command Line Inputs
+
+The user will supply four arguments when running the 7-30-2018_Van_Andel_vcf_filter_v1.sh script:
+
+The first read in $1 is the working folder
+The second read in $2 is the starting vcf file
+The third read in $3 is the output tsv file
+The forth read in $4 is the output re-annotated vcf file
+
+## Output Files
+
+
