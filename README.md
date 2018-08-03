@@ -17,15 +17,20 @@ the following information derived from the VCF and querying the ExAC database vi
 API (documentation can be found at http://exac.hms.harvard.edu/):
 
 1.Variant type (e.g. insertion, deletion, etc.). 
+
 2.Variant effect (e.g. missense,synonymous, etc.).
 
 *Note: If multiple variant types exist in the ExAC database, annotate with the most
 deleterious possibility.*
 
 3. Read depth at the site of variation.
+
 4. Number of reads supporting the variant.
-5.Percentage of reads supporting the variant versus those supporting reference reads.
+
+5. Percentage of reads supporting the variant versus those supporting reference reads.
+
 6. Allele frequency of variant
+
 7. (Optional) Any other information from ExAC that you feel might be relevant.
 
 For this challenge please upload all relevant code (written in your preferred language)
