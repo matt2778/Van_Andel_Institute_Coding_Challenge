@@ -1,6 +1,6 @@
 # Van Andel Institute Coding Challenge
 
-Coding challenge for Bioinformatics Scientist position
+Coding challenge for Bioinformatics Scientist position.
 
 ## Challenge Text
 
