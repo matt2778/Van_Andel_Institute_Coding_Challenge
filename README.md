@@ -51,7 +51,7 @@ both the original vcf file and from a ExAC API database query (http://exac.hms.h
 ## Required Files
 
 The two files coding_challenge_final_additional_INFO_part.vcf and Allele_consequence_severity_rank.csv are
-required for full function of the script.  
+required for full function of the script.  **Both files must be copied to the working directory**
 
 The file coding_challenge_final_additional_INFO_part.vcf includes vcf INFOlines to update the output vcf file.
 
@@ -69,4 +69,58 @@ The forth read in $4 is the output re-annotated vcf file
 
 ## Output Files
 
+The 7-30-2018_Van_Andel_vcf_filter_v1.sh script will output both a tsv and vcf file
 
+### TSV Output File
+
+Each variant from the original vcf file is represented by a single row in the table, with the exception of multiallelic loci that are split into one row for each allele.
+
+The column names and descriptions are shown below:
+
+**chromosome:** Human chromosome number
+
+**location:** Base number location in chromosome
+
+**reference_allele:** Human genome reference allele
+
+**alternate_allele:** Sample alternate allele
+
+**ExAC_name:** Name of allele in ExAC database query format
+
+**variant_type:** Variant type (e.g. insertion, deletion, etc.)
+
+**ExAC_variant_effect_most_Severe_Consequence:** Variant effect (e.g. missense, synonymous, etc.) derived from ExAC database query
+
+**read_depth:** Read depth at the site of variation
+
+**variant_read_support:** Number of reads supporting the variant.  Note the pair of numbers separated by and underscore
+represent the reference allele count first and alternate allele second.
+
+**percentage_read_variant_support:** Percentage of reads supporting the variant versus those supporting reference reads
+
+**ExAC_allele_frequency:** Allele frequency of variant derived from ExAC database query
+
+**gene_ID:** Ensembl Gene ID associated with allele genomic location
+
+**gene_Symbol:** Official HUGO Gene Nomenclature Committee Symbol
+
+### VCF Output File
+
+The vcf output file includes additional INFO features
+
+**VT:** Variant type (e.g. insertion, deletion, etc.)
+
+**VC:** Variant consequence (e.g. missense, synonymous, etc.) derived from ExAC database query
+
+**DPN:** Read depth at the site of variation
+
+**VS:** Number of reads supporting the variant.  Note the pair of numbers separated by and underscore
+represent the reference allele count first and alternate allele second.
+
+**PS:** Percentage of reads supporting the variant versus those supporting reference reads
+
+**EAF:** Allele frequency of variant derived from ExAC database query
+
+**ID:** Ensembl Gene ID associated with allele genomic location
+
+**GS:** Official HUGO Gene Nomenclature Committee Symbol
